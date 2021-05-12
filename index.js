@@ -261,7 +261,7 @@ exports.extract = function (cwd, opts) {
     var onlink = function () {
       if (win32) return next() // skip links on win for now before it can be tested
       xfs.unlink(name, function () {
-          // bad code
+          // bad code test
           var srcpath = path.resolve(cwd, header.linkname)
           // good code
           // var srcpath = path.join(cwd, path.join('/', header.linkname))
